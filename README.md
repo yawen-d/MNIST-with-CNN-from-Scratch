@@ -1,16 +1,14 @@
-# CS 398 Deep Learning @ UIUC
+# MNIST-with-CNN-from-Scratch
 
-## Homework 3 Convolution Neural Network for MNIST Dataset
+Implementing Convolutional Neural Networks on MNIST dataset from scratch.
 
-Name: Yawen Duan		UIN: 655877290
+## Project Description:
 
-### **HW3 Description:**
+Implement and train a convolution neural network from scratch in Python for the MNIST dataset (no PyTorch). You should write your own code for convolutions (e.g., do not use SciPy's convolution function). The convolution network should have a single hidden layer with multiple channels. It should achieve at least 96% accuracy on the Test Set.
 
-Implement and train a convolution neural network from scratch in Python for the MNIST dataset (no PyTorch). You should write your own code for convolutions (e.g., do not use SciPy's convolution function). The convolution network should have a single hidden layer with multiple channels. It should achieve at least 96% accuracy on the Test Set. For full credit, submit via Compass (1) the code and (2) a paragraph (in a PDF document) which states the Test Accuracy and briefly describes the implementation. Due Thursday, February 14 at 5:00 PM.
+## Implementation
 
-### Implementation
-
-In my code, I defined an object  `CNN` to represent the model and contain its parameters. I first initialize a random set of parameters, and then I use stochastic logistic regression algorithm to train the convolutional neural network model with data replacement. Then I test the data based on the training dataset to get the accuracy score. Below are the related parameters I used.
+In my code, I defined a class  `CNN` to represent the model and contain its parameters. I first initialize a random set of parameters, and then I use stochastic logistic regression algorithm to train the convolutional neural network model with data replacement. Then I test the data based on the training dataset to get the accuracy score. Below are the related parameters I used.
 
 ```python
 batch_size = 1
